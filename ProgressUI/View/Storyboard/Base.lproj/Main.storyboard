@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="25408" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LEi-jf-gkb">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="25407"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ein-vk-KdW">
+            <objects>
+                <viewController id="LEi-jf-gkb" customClass="ViewController" customModule="ProgressUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MqR-TZ-cAX">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="APK-fP-8M2" customClass="CircularProgressView" customModule="ProgressUI" customModuleProvider="target">
+                                <rect key="frame" x="156.66666666666666" y="173" width="80" height="80"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="APK-fP-8M2" secondAttribute="height" multiplier="1:1" id="edo-kQ-PSB"/>
+                                    <constraint firstAttribute="width" constant="80" id="oqE-A5-weh"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mSy-iO-ptB">
+                                <rect key="frame" x="156.66666666666666" y="398.66666666666669" width="80" height="80"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="AEX-go-cAK"/>
+                                    <constraint firstAttribute="width" secondItem="mSy-iO-ptB" secondAttribute="height" multiplier="1:1" id="QEE-qX-sAm"/>
+                                    <constraint firstAttribute="width" secondItem="mSy-iO-ptB" secondAttribute="height" multiplier="1:1" id="ySZ-qq-FxL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Aom-zW-8i0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="APK-fP-8M2" firstAttribute="centerX" secondItem="MqR-TZ-cAX" secondAttribute="centerX" id="6Iq-GI-TKY"/>
+                            <constraint firstItem="APK-fP-8M2" firstAttribute="centerY" secondItem="MqR-TZ-cAX" secondAttribute="centerY" multiplier="0.5" id="I6G-Wn-0Oi"/>
+                            <constraint firstItem="mSy-iO-ptB" firstAttribute="centerY" secondItem="Aom-zW-8i0" secondAttribute="centerY" id="QSn-El-9DW"/>
+                            <constraint firstItem="mSy-iO-ptB" firstAttribute="centerX" secondItem="Aom-zW-8i0" secondAttribute="centerX" id="Zu8-J4-Gh5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="progressView" destination="APK-fP-8M2" id="izX-4x-wrL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AEo-pR-tyi" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="444" y="73"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
